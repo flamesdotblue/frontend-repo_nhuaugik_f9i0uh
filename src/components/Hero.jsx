@@ -9,16 +9,18 @@ export default function Hero() {
 
   return (
     <section className="relative h-screen w-full overflow-hidden bg-neutral-950 text-white">
+      {/* Full-bleed interactive Spline scene */}
       <div className="absolute inset-0">
         <Spline
-          scene="https://prod.spline.design/HVx7nA7oFco0H0Zc/scene.splinecode"
+          scene="https://prod.spline.design/igThmltzmqv5hkWo/scene.splinecode"
           style={{ width: '100%', height: '100%' }}
         />
       </div>
 
-      {/* Soft gradient overlay (non-blocking) */}
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/60 via-black/20 to-neutral-950/90" />
+      {/* Soft gradient overlay that never blocks interaction with the Spline */}
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/70 via-black/35 to-neutral-950/90" />
 
+      {/* Centered content */}
       <div className="relative z-10 mx-auto flex h-full max-w-7xl flex-col items-center justify-center px-6 text-center">
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -35,9 +37,8 @@ export default function Hero() {
           viewport={{ once: true }}
           transition={{ duration: 0.9, delay: 0.1 }}
           className="font-serif text-4xl leading-tight sm:text-6xl md:text-7xl"
-          style={{ fontFeatureSettings: '"ss01" on, "liga" on' }}
         >
-          Refined. Modern. <span className="text-neutral-200">Marfliq.</span>
+          Refined. Modern. <span className="text-neutral-200">Merfliq.</span>
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 16 }}

@@ -2,13 +2,20 @@ import { motion } from 'framer-motion';
 
 export default function About() {
   return (
-    <section id="about" className="relative overflow-hidden bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-neutral-50 via-neutral-100 to-neutral-50 py-24 text-neutral-800">
-      <div className="pointer-events-none absolute inset-0 opacity-40" style={{
-        backgroundImage: 'url(https://images.unsplash.com/photo-1542202229-7d93c33f5d07?q=80&w=2000&auto=format&fit=crop)',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        mixBlendMode: 'multiply'
-      }} />
+    <section
+      id="about"
+      className="relative overflow-hidden bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-neutral-50 via-neutral-100 to-neutral-50 py-24 text-neutral-800"
+    >
+      <div
+        className="pointer-events-none absolute inset-0 opacity-40"
+        style={{
+          backgroundImage:
+            'url(https://images.unsplash.com/photo-1542202229-7d93c33f5d07?q=80&w=2000&auto=format&fit=crop)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          mixBlendMode: 'multiply',
+        }}
+      />
       <div className="relative mx-auto max-w-6xl px-6">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}

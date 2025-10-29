@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion';
 import Spline from '@splinetool/react-spline';
 
-const whatsappNumber = '15551234567'; // Replace with your number
+const whatsappNumber = '15551234567';
 const message = encodeURIComponent(
-  'Hello Merfliq, I would like to order the Marfliq Shampoo Bottle. Please share purchase details.'
+  'Hello Merfliq, I would like to order the Merfliq Shampoo Bottle. Please share purchase details.'
 );
 const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${message}`;
 
@@ -26,7 +26,7 @@ export default function ProductShowcase() {
             transition={{ duration: 0.6 }}
             className="font-serif text-3xl sm:text-4xl"
           >
-            Marfliq Shampoo Bottle
+            Merfliq Shampoo Bottle
           </motion.h3>
           <motion.p
             initial={{ opacity: 0, y: 12 }}

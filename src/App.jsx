@@ -4,9 +4,8 @@ import About from './components/About';
 import ProductShowcase from './components/ProductShowcase';
 import ContactOrder from './components/ContactOrder';
 
-function App() {
+export default function App() {
   useEffect(() => {
-    // Ensure smooth scroll behavior for anchor navigation
     const root = document.documentElement;
     const prev = root.style.scrollBehavior;
     root.style.scrollBehavior = 'smooth';
@@ -16,7 +15,7 @@ function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-white antialiased">
+    <div className="min-h-screen bg-white text-neutral-900 antialiased">
       <Hero />
       <About />
       <ProductShowcase />
@@ -24,5 +23,3 @@ function App() {
     </div>
   );
 }
-
-export default App;

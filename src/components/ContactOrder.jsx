@@ -1,10 +1,8 @@
 import { motion } from 'framer-motion';
 import { Search, FileText, Truck, Instagram, MessageCircle } from 'lucide-react';
 
-const whatsappNumber = '15551234567'; // Replace with your number
-const message = encodeURIComponent(
-  'Hi Merfliq, I would like to place an order. Please assist.'
-);
+const whatsappNumber = '15551234567';
+const message = encodeURIComponent('Hi Merfliq, I would like to place an order. Please assist.');
 const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${message}`;
 
 export default function ContactOrder() {
